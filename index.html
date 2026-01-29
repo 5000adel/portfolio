@@ -4,31 +4,55 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Student Portfolio</title>
-      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="assets/css/style.css">
    </head>
    <body>
       <header>
-         <h1 id="name">Adel P. Danial</h1>
-         <img src="picture.jpeg" alt="Profile Picture" id="profile-img">
-         <p id="course-year">Computer Science - 2nd Year</p>
-         <button id="theme-toggle">Switch Theme</button>
+         <container>
+            <img src="picture.jpeg" alt="Profile Picture" id="profile-img">
+            <div1>
+               <h1 id="name">Adel P. Danial</h1>
+               <hr>
+               <p id="course-year">Computer Science <br>
+                  2nd Year</p>
+            </div1>
+         </container>
+
       </header>
-      <section id="achievements">
-         <h2>Achievements/Certifications</h2>
-         <ul>
-            <li>IT Specialist - Java - Certiport</li>
-            <li>-----</li>
-            <li>-----</li>
-         </ul>
-      </section>
-      <section id="projects">
-         <h2>Previous Projects</h2>
-         <ul>
-            <li>RevVise - Vehicle Maintenace Logger</li>
-            <li>-----</li>
-            <li>-----</li>
-         </ul>
-      </section>
-      <script src="script.js"></script>
+
+      <div class="body-container">
+         
+         <div class="main-content">
+            <section id="achievements">
+               <h2 class="content-header">Achievements/Certifications</h2>
+               <ul>
+                  <li class="text-content">IT Specialist - Java - Certiport</li>
+               </ul>
+            </section>
+            <section id="projects">
+               <h2 class="content-header">Previous Projects</h2>
+               <ul>
+                  <li class="text-content">RevVise - Vehicle Maintenace Logger</li>
+                  <li class="text-content">
+                     <a href="https://5000adel.github.io/practice-webapp/">IT103L M1 Summative Assessment</a>
+                  </li>
+                  <li class="text-content">Other projects to come...</li>
+               </ul>
+            </section>
+            <button id="theme-toggle">Switch Theme</button>
+         </div>
+
+         <div class="secondary-content">
+            <div class="secondary-container">
+               <h2 class="secondary-content-header">About Me</h2>
+            </div>
+
+            <div class="secondary-container">
+               <h2 class="secondary-content-header">Skills</h2>
+            </div>
+         </div>
+      
+      </div>
+      <script src="assets/js/script.js"></script>
    </body>
 </html>
